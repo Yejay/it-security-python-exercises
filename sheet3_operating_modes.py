@@ -499,5 +499,38 @@ def main():
     print("- What are the practical limitations of meet-in-the-middle attacks on real systems?")
     print("- How can padding oracle vulnerabilities be prevented in practice?")
 
+def demo():
+    """Quick demo of completed exercises (spoiler alert!)"""
+    print("🚀 DEMO MODE - Solutions Preview")
+    print("⚠️  SPOILER ALERT: This shows working implementations!")
+    print("=" * 60)
+    
+    # Only run if they really want to see solutions
+    response = input("\nAre you sure you want to see the solutions? (y/N): ")
+    if response.lower() != 'y':
+        print("Good choice! Work through the exercises yourself first. 💪")
+        return
+        
+    print("\n🔍 Running all exercises with solutions...")
+    # Here you could show working versions
+    # (This would be an advanced feature to add later)
+
 if __name__ == "__main__":
-    main()
+    import sys
+    
+    # Simple command line interface
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "demo":
+            demo()
+        elif sys.argv[1] == "help":
+            print("🎯 IT Security Python Exercises - Sheet 3")
+            print("\nUsage:")
+            print("  python3 sheet3_operating_modes.py        # Start exercises")
+            print("  python3 sheet3_operating_modes.py demo   # Preview solutions (spoiler!)")
+            print("  python3 sheet3_operating_modes.py help   # Show this help")
+            print("\n💡 Recommended: Start with no arguments and work through TODOs!")
+        else:
+            print(f"Unknown command: {sys.argv[1]}")
+            print("Use 'help' to see available commands.")
+    else:
+        main()

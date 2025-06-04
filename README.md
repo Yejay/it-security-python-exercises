@@ -16,6 +16,18 @@ Hands-on Python exercises for learning cryptography and IT security concepts, ba
 
 3. **Follow the TODOs** and learn by implementing!
 
+### 🔧 **Command Line Options:**
+```bash
+# Start learning (recommended)
+python3 sheet1_arithmetic_affine.py
+
+# Get help
+python3 sheet1_arithmetic_affine.py help
+
+# Preview solutions (spoiler alert!)
+python3 sheet1_arithmetic_affine.py demo
+```
+
 ## 📚 Exercise Files
 
 ### 🔢 Sheet 1: Arithmetic & Affine Cipher
