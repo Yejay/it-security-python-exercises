@@ -24,10 +24,21 @@ Sheet 3: Block Cipher Operating Modes - Exercises
 always use well-tested libraries and follow security best practices!
 """
 
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
-from Crypto.Random import get_random_bytes
 import time
+
+# Check for required cryptography library
+try:
+    from Crypto.Cipher import AES
+    from Crypto.Util.Padding import pad, unpad
+    from Crypto.Random import get_random_bytes
+except ImportError as e:
+    print("❌ Missing required cryptography library!")
+    print("\n🔧 To fix this, run:")
+    print("   pip install pycryptodome")
+    print("\n📦 Or install all dependencies:")
+    print("   pip install -r requirements.txt")
+    print(f"\n🔍 Error details: {e}")
+    exit(1)
 
 # =============================================================================
 # Exercise 1: AES-ECB Implementation

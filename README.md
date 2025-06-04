@@ -4,10 +4,15 @@ Hands-on Python exercises for learning cryptography and IT security concepts, ba
 
 ## 🎯 Quick Start
 
-1. **Install Dependencies:**
+1. **Install Dependencies (Required!):**
 
    ```bash
    pip install pycryptodome
+   ```
+   
+   Or install from requirements file:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 2. **Run Your First Exercise:**
@@ -17,6 +22,8 @@ Hands-on Python exercises for learning cryptography and IT security concepts, ba
    ```
 
 3. **Follow the TODOs** and learn by implementing!
+
+> ⚠️ **Note**: Sheet 3 requires the `pycryptodome` library for AES implementations. Sheet 1 uses only Python standard library.
 
 ### 🔧 Command Line Options
 
