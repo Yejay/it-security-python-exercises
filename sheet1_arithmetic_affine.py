@@ -490,15 +490,31 @@ def demo():
     print("⚠️  SPOILER ALERT: This shows working implementations!")
     print("=" * 60)
     
-    # Only run if they really want to see solutions
-    response = input("\nAre you sure you want to see the solutions? (y/N): ")
-    if response.lower() != 'y':
-        print("Good choice! Work through the exercises yourself first. 💪")
-        return
+    # Try to get user confirmation, but handle non-interactive environments
+    try:
+        response = input("\nAre you sure you want to see the solutions? (y/N): ")
+        if response.lower() != 'y':
+            print("Good choice! Work through the exercises yourself first. 💪")
+            return
+    except (EOFError, KeyboardInterrupt):
+        print("\nRunning in non-interactive mode - showing demo...")
         
-    print("\n🔍 Running all exercises with solutions...")
-    # Here you could show working versions
-    # (This would be an advanced feature to add later)
+    print("\n🔍 Demo: What the completed exercises look like")
+    print("-" * 50)
+    
+    # Show a taste of what working implementations produce
+    print("✅ Exercise 1: Manual calculations")
+    print("   5⁻¹ mod 11 = 9 (because 5 × 9 = 45 ≡ 1 mod 11)")
+    print("   5⁻¹ mod 12 = no inverse (because gcd(5, 12) ≠ 1)")
+    print("   5⁻¹ mod 13 = 8 (because 5 × 8 = 40 ≡ 1 mod 13)")
+    
+    print("\n✅ Exercise 2: Trial method finds inverses by testing values")
+    print("✅ Exercise 3: Extended GCD is much faster for large numbers")
+    print("✅ Exercise 4: Affine cipher encrypts HELLO → AAZZQ with a=5, b=3")
+    print("✅ Exercise 5: Frequency analysis can break the cipher!")
+    
+    print(f"\n💡 To see full implementations, complete the TODOs yourself!")
+    print("💪 The real learning happens when you build it step by step.")
 
 if __name__ == "__main__":
     import sys

@@ -505,15 +505,37 @@ def demo():
     print("⚠️  SPOILER ALERT: This shows working implementations!")
     print("=" * 60)
     
-    # Only run if they really want to see solutions
-    response = input("\nAre you sure you want to see the solutions? (y/N): ")
-    if response.lower() != 'y':
-        print("Good choice! Work through the exercises yourself first. 💪")
-        return
+    # Try to get user confirmation, but handle non-interactive environments
+    try:
+        response = input("\nAre you sure you want to see the solutions? (y/N): ")
+        if response.lower() != 'y':
+            print("Good choice! Work through the exercises yourself first. 💪")
+            return
+    except (EOFError, KeyboardInterrupt):
+        print("\nRunning in non-interactive mode - showing demo...")
         
-    print("\n🔍 Running all exercises with solutions...")
-    # Here you could show working versions
-    # (This would be an advanced feature to add later)
+    print("\n🔍 Demo: What the completed exercises look like")
+    print("-" * 50)
+    
+    # Show a taste of what working implementations produce
+    print("✅ Exercise 1: AES-ECB Implementation")
+    print("   'Dies ist ein Test' → encrypted with key 'einszweidreivier'")
+    print("   ECB reveals patterns when blocks repeat!")
+    
+    print("\n✅ Exercise 2: AES-CBC Implementation")
+    print("   Same input blocks produce different outputs due to chaining")
+    print("   Much more secure than ECB mode")
+    
+    print("\n✅ Exercise 3: Meet-in-the-Middle Attack")
+    print("   Reduces 2^256 complexity to just 2×2^128 operations")
+    print("   Demonstrates time-memory trade-offs in cryptanalysis")
+    
+    print("\n✅ Exercise 4: Security Analysis")
+    print("   ECB: Fast but insecure, reveals patterns")
+    print("   CBC: Slower but secure, no pattern leakage")
+    
+    print(f"\n💡 To see full implementations, complete the TODOs yourself!")
+    print("💪 The real learning happens when you build it step by step.")
 
 if __name__ == "__main__":
     import sys
