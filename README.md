@@ -137,14 +137,13 @@ Unlike typical programming exercises, these focus on:
 
 ```
 it-security-python-exercises/
-├── README.md                      # This file
-├── requirements.txt               # Python dependencies  
-├── sheet1_arithmetic_affine.py    # Modular arithmetic & affine cipher
-├── sheet3_operating_modes.py      # AES modes & cryptanalysis
-└── implementations/               # Reference implementations
-    └── utils/
-        └── crypto_utils.py        # Utility functions
+├── README.md                      # This comprehensive guide
+├── requirements.txt               # Python dependencies (just pycryptodome)
+├── sheet1_arithmetic_affine.py    # Modular arithmetic & affine cipher exercises
+└── sheet3_operating_modes.py      # AES modes & cryptanalysis exercises
 ```
+
+**Clean and minimal** - everything you need to learn cryptography, nothing you don't!
 
 ## 🎯 Learning Outcomes
 
