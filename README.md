@@ -10,10 +10,7 @@ Hands-on Python exercises for learning cryptography and IT security concepts, ba
    pip install pycryptodome
    ```
    
-   Or install from requirements file:
-   ```bash
-   pip install -r requirements.txt
-   ```
+   > 💡 **Simple Setup**: This installs globally and works everywhere. For advanced users who prefer isolation, use `pip install -r requirements.txt` in a virtual environment.
 
 2. **Run Your First Exercise:**
 
@@ -208,9 +205,19 @@ After completing these exercises, you'll understand:
 ## 🚀 Ready to Start?
 
 ```bash
+# Clone and start learning immediately
 git clone https://github.com/Yejay/it-security-python-exercises.git
 cd it-security-python-exercises
 pip install pycryptodome
+python3 sheet1_arithmetic_affine.py
+```
+
+### 🔧 Virtual Environment (Optional)
+If you prefer isolated dependencies:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 python3 sheet1_arithmetic_affine.py
 ```
 
