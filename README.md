@@ -5,18 +5,21 @@ Hands-on Python exercises for learning cryptography and IT security concepts, ba
 ## 🎯 Quick Start
 
 1. **Install Dependencies:**
+
    ```bash
    pip install pycryptodome
    ```
 
 2. **Run Your First Exercise:**
+
    ```bash
    python3 sheet1_arithmetic_affine.py
    ```
 
 3. **Follow the TODOs** and learn by implementing!
 
-### 🔧 **Command Line Options:**
+### 🔧 Command Line Options
+
 ```bash
 # Start learning (recommended)
 python3 sheet1_arithmetic_affine.py
@@ -26,14 +29,19 @@ python3 sheet1_arithmetic_affine.py help
 
 # Preview solutions (spoiler alert!)
 python3 sheet1_arithmetic_affine.py demo
+
+# Same options available for both exercise files
+python3 sheet3_operating_modes.py help
 ```
 
 ## 📚 Exercise Files
 
 ### 🔢 Sheet 1: Arithmetic & Affine Cipher
+
 **File:** `sheet1_arithmetic_affine.py`
 
 **What You'll Learn:**
+
 - Modular arithmetic and multiplicative inverses
 - Trial method vs Extended Euclidean Algorithm  
 - Affine cipher encryption/decryption
@@ -41,16 +49,19 @@ python3 sheet1_arithmetic_affine.py demo
 - Breaking real ciphers step by step
 
 **Key Exercises:**
+
 - Manual inverse calculations to build intuition
 - Implement trial method for finding modular inverses
 - Code the efficient Extended Euclidean Algorithm
 - Build a complete affine cipher system
 - Crack encrypted messages using frequency analysis
 
-### 🔐 Sheet 3: Block Cipher Operating Modes  
+### 🔐 Sheet 3: Block Cipher Operating Modes
+
 **File:** `sheet3_operating_modes.py`
 
 **What You'll Learn:**
+
 - AES-ECB and AES-CBC implementations
 - Security analysis of different encryption modes
 - Meet-in-the-middle attack principles
@@ -58,6 +69,7 @@ python3 sheet1_arithmetic_affine.py demo
 - Real-world cryptographic considerations
 
 **Key Exercises:**
+
 - Implement AES-ECB and understand its weaknesses
 - Build AES-CBC with proper initialization vectors
 - Compare security properties visually
@@ -67,6 +79,7 @@ python3 sheet1_arithmetic_affine.py demo
 ## 🚀 Learning Approach
 
 ### Progressive Structure
+
 Each exercise file is designed for step-by-step learning:
 
 1. **Read the theory** in comments and docstrings
@@ -75,6 +88,7 @@ Each exercise file is designed for step-by-step learning:
 4. **Uncomment the next exercise** and continue
 
 ### Example Workflow
+
 ```python
 # Start with the basics
 exercise_1_manual_calculations()
@@ -102,12 +116,14 @@ compare_methods()    # Uncomment when ready
 ## 🎓 Educational Philosophy
 
 ### Learn by Doing
+
 - **No copy-paste solutions** - build understanding through implementation
 - **Guided discovery** - hints and structure without giving away answers
 - **Immediate feedback** - test cases verify your understanding
 - **Progressive complexity** - start simple, build to advanced concepts
 
 ### Real-World Focus
+
 - **Practical algorithms** - implement what's actually used
 - **Security analysis** - understand why some approaches fail
 - **Performance considerations** - see trade-offs in action
@@ -130,6 +146,7 @@ compare_methods()    # Uncomment when ready
 ## 🤝 Getting Help
 
 If you get stuck:
+
 1. **Read the hints** in TODO comments carefully
 2. **Check docstrings** for algorithm outlines and examples
 3. **Review theory sections** at the top of each exercise
@@ -139,6 +156,7 @@ If you get stuck:
 ## 🌟 What Makes This Different
 
 Unlike typical programming exercises, these focus on:
+
 - **Mathematical foundations** of cryptography
 - **Security implications** of implementation choices
 - **Real attack scenarios** and defense strategies
@@ -147,8 +165,9 @@ Unlike typical programming exercises, these focus on:
 
 ## 📁 Project Structure
 
-```
+```text
 it-security-python-exercises/
+├── .gitignore                     # Development files to ignore
 ├── README.md                      # This comprehensive guide
 ├── requirements.txt               # Python dependencies (just pycryptodome)
 ├── sheet1_arithmetic_affine.py    # Modular arithmetic & affine cipher exercises
@@ -162,18 +181,30 @@ it-security-python-exercises/
 After completing these exercises, you'll understand:
 
 **Fundamental Concepts:**
+
 - How modular arithmetic enables modern cryptography
 - Why some mathematical operations are "hard" to reverse
 - The relationship between mathematics and security
 
 **Practical Skills:**
+
 - Implementing classical and modern ciphers
 - Analyzing cryptographic algorithms for weaknesses
 - Understanding the security vs. performance trade-offs
 
 **Security Mindset:**
+
 - How attackers think about breaking cryptography
 - Why implementation details matter as much as algorithms
 - The importance of proper key management and initialization
 
-Ready to dive into the fascinating world of cryptography? Start with `sheet1_arithmetic_affine.py` and begin your journey! 🚀
+## 🚀 Ready to Start?
+
+```bash
+git clone https://github.com/Yejay/it-security-python-exercises.git
+cd it-security-python-exercises
+pip install pycryptodome
+python3 sheet1_arithmetic_affine.py
+```
+
+Ready to dive into the fascinating world of cryptography? Start with `sheet1_arithmetic_affine.py` and begin your journey!
